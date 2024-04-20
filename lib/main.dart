@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weatherapp/screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,18 +33,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body:  Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-             Text(
-              'Hello World',
-            ),
-          ],
-        ),
-      ),
-
+    return  const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomeScreen(),
     );
   }
 }
